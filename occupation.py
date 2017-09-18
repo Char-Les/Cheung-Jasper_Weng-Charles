@@ -25,6 +25,16 @@ def randomcsv(file_name):
     total = float(lines[len(lines) - 1].rsplit(",")[1])
     #print total
 
+	'''
+    ###creating a list to choose an occupation by %
+    listo = []
+    for key in occupations:
+        for x in range( int ( float( occupations[key] ) * 10)  ):#XD Conversions
+            listo.append(key)
+    #print listo
+    return random.choice(listo);
+	'''
+
     ###find highest %
     i = 0
     high = 0
@@ -57,5 +67,5 @@ for x in range(0,10001):
         test[a] += 1
     except:
         test[a] = 1
-        
+
 print test
