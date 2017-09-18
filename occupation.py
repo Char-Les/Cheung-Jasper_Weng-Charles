@@ -25,15 +25,15 @@ def randomcsv(file_name):
     total = float(lines[len(lines) - 1].rsplit(",")[1])
     #print total
 
-	'''
+	######first approach to this problem
     ###creating a list to choose an occupation by %
-    listo = []
-    for key in occupations:
-        for x in range( int ( float( occupations[key] ) * 10)  ):#XD Conversions
-            listo.append(key)
+    #listo = []
+    #for key in occupations:
+    #    for x in range( int ( float( occupations[key] ) * 10)  ):#XD Conversions
+    #        listo.append(key)
     #print listo
-    return random.choice(listo);
-	'''
+    #return random.choice(listo);
+
 
     ###find highest %
     i = 0
